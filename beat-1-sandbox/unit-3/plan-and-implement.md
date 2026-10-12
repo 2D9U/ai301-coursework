@@ -116,8 +116,3 @@ Why it reads this way: the first version I considered was shape-based ("the plan
 **Trade-offs**
 
 This check is the only required check pkg-15 failed in run 1, so it alone decides that package; gold calls pkg-15 "arguable because the core fix is right", and my rubric gives no partial credit for a correct core fix bundled with extras. A plan with a good fix plus one small unasked-for item gets held. What it gives up in the other direction: the "deferred work does not count" clause takes the plan's word for it. A plan that writes "Out of scope: the undici migration (follow-up PR)" and then quietly does it in the build passes here; only the Deviations section and the Unit 4 diff would catch that. It also doesn't judge whether a deferral is wise: pkg-09's deferral is "arguable" per gold, and this check passes it without asking. The "same fix at sibling call sites" allowance could let a plan touch more files than the repro shows; I accepted that because, in calib-01, checking the shared callback from both commit views is exactly the right thing to do.
-
----
-
-Related paths: `plan.md` and `eval-run.txt` in this directory; your skill's files in
-`tools/plan-check/`.
